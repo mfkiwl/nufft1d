@@ -1,10 +1,10 @@
 # nufft1d
 An implementation of the non-uniform fast Fourier transform (NUFFT) of type 1 in 1D based on the work done by Greengard and Lee (2004) [1]. It achieves an accuracy comparable with the one of the FFT (around `1e-14`) when compared to performing the direct summation. Worth mentioning is however that this is a naive implementation of the algorithm in [1], and does thus not fully utilize all of the computational benefits of the algorithm.
 
-For more information about the NUFFT as well as the mentioned algorithm and its performance, see the included [report](D_Krantz_Non_Uniform_fast_Fourier_Transform_Report.pdf).
+For more information about the NUFFT as well as the mentioned algorithm and its performance, see the accompanying [report](D_Krantz_Non_Uniform_fast_Fourier_Transform_Report.pdf).
 
 ## Usage
-[Here](example.m) you can see an example of how the main function `nufft1d` can be used (example from the [report](D_Krantz_Non_Uniform_fast_Fourier_Transform_Report.pdf)).
+[Here](examples/example.m) you can see an example of how the main function `nufft1d` can be used (example from the [report](D_Krantz_Non_Uniform_fast_Fourier_Transform_Report.pdf)).
 
 ```matlab
 function F = nufft1d(f,x,M,R,M_sp,tau)

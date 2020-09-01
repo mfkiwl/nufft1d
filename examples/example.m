@@ -1,6 +1,8 @@
 %-Non-uniform data example in Sect. 3.2------------------------------------
 clear all;
 close all;
+addpath('./src');
+addpath('./src/utils');
 
 % Set random seed
 rng(1234);
